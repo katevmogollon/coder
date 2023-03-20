@@ -1,0 +1,42 @@
+/* footer*/
+footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    background-color: rgb(87, 92, 43);
+  }
+  
+  .grupo1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  
+  .logo {
+    justify-self: center;
+  }
+  
+  .grid-item {
+    text-align: center;
+  }
+  
+  .grupo2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+  }
+  .grupo3,
+  .grupo4 {
+    text-align: center;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+
