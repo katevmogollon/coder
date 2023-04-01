@@ -6,4 +6,63 @@
 @use './partials/restaurante';
 @use './partials/ubicacion';
 @use './partials/contacto';
-
+  
+  /* estilos para dispositivos móviles */
+  @media screen and (max-width: 767px) {
+    /* header */
+    .navegador {
+      font-size: large;
+    }
+  
+    /* main pagina 1*/
+    .pagina2 {
+      font-size: 1.6em;
+      flex-direction: column;
+    }
+  
+    .img-cabaña {
+      max-width: 100%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  
+    .principal1 {
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+    }
+  
+    .foto1 img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+  
+    .parafo1 {
+      font-size: 2.8em;
+    }
+  
+    /* granja*/
+    .granja1 {
+      font-size: 18px;
+    }
+  
+    .granja19 {
+      flex-direction: column;
+    }
+  
+    .granja2, .granja3, .granja4 {
+      padding: 15px;
+    }
+  
+    .granja2 h4, .granja3 h4, .granja4 h4 {
+      font-size: 24px;
+    }
+  
+    .granja2 h5, .granja3 h5, .granja4 h5 {
+      font-size: 18px;
+    }
+  
+    .granja2 p, .granja3 p, .granja4 p {
+      font-size: 14px;
+    }
+}

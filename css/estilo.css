@@ -10,7 +10,7 @@ html {
 
 body {
   font-family: "EB Garamond", serif;
-  background-color: rgb(61, 73, 39);
+  background-color: rgb(58, 70, 38);
 }
 
 li {
@@ -20,7 +20,7 @@ li {
 
 a {
   text-decoration: none;
-  color: rgb(5, 26, 5);
+  color: rgb(199, 228, 199);
 }
 
 /* header */
@@ -114,6 +114,7 @@ a {
   font-size: 3.3em;
 }
 
+/* granja*/
 .granja1 {
   justify-self: stretch;
   align-self: center;
@@ -153,23 +154,52 @@ a {
   color: rgb(1, 17, 2);
 }
 
-.grupomapa {
+/* restaurante*/
+.res-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.res-main-container span,
+.res-main-container div {
+  margin: 10px 0;
+}
+.res-main-container .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
-  margin-top: 50px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .res-main-container .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-.mapa1 {
-  justify-self: center;
-  max-width: 90%;
+/* ubicacion*/
+.grupomapa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
 }
-
-.comollego {
+.grupomapa .mapa1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.grupomapa .comollego {
   justify-content: center;
   font-size: 1.7em;
 }
+@media (max-width: 1300px) {
+  .grupomapa {
+    flex-direction: column;
+  }
+}
 
+/* contactos*/
 /*formulario*/
 .pa1 {
   color: black;
@@ -195,6 +225,55 @@ textarea {
   padding: 7px;
   box-sizing: border-box;
   font-size: 17px;
+}
+
+/* estilos para dispositivos móviles */
+@media screen and (max-width: 767px) {
+  /* header */
+  .navegador {
+    font-size: large;
+  }
+  /* main pagina 1*/
+  .pagina2 {
+    font-size: 1.6em;
+    flex-direction: column;
+  }
+  .img-cabaña {
+    max-width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .principal1 {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  .foto1 img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  .parafo1 {
+    font-size: 2.8em;
+  }
+  /* granja*/
+  .granja1 {
+    font-size: 18px;
+  }
+  .granja19 {
+    flex-direction: column;
+  }
+  .granja2, .granja3, .granja4 {
+    padding: 15px;
+  }
+  .granja2 h4, .granja3 h4, .granja4 h4 {
+    font-size: 24px;
+  }
+  .granja2 h5, .granja3 h5, .granja4 h5 {
+    font-size: 18px;
+  }
+  .granja2 p, .granja3 p, .granja4 p {
+    font-size: 14px;
+  }
 }
 
 /*# sourceMappingURL=estilo.css.map */
